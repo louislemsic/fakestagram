@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Fakestagram</string>
+    <string name="react">Heart react button</string>
+    <string name="user_image">the image of the user</string>
+    <string name="image">the image itself posted by the user</string>
+    <string name="username_placeholder">Username</string>
+    <string name="caption_placeholder">Insert Caption Here</string>
+    <string name="date_placeholder">Insert Date Here</string>
+    <string name="location_placeholder">Insert Location Here</string>
+    <string name="heart_animation">the heart animation when you like the photo</string>
 </resources>
