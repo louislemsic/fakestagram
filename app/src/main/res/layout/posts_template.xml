@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_text_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <ImageView
+            android:id="@+id/iv_user_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/user_image"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_divider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/person3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="79dp" />
+
+        <ImageButton
+            android:id="@+id/ib_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/image"
+            android:scaleType="centerCrop"
+            android:soundEffectsEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline_divider"
+        />
+
+        <ImageView
+            android:id="@+id/iv_heart_animation"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/heart_animation"
+            app:layout_constraintBottom_toBottomOf="@+id/ib_image"
+            app:layout_constraintEnd_toEndOf="@+id/ib_image"
+            app:layout_constraintStart_toStartOf="@+id/ib_image"
+            app:layout_constraintTop_toTopOf="@+id/ib_image"
+            app:srcCompat="@drawable/avd_instagram_like"
+            android:alpha="0"/>
+
+        <ImageButton
+            android:id="@+id/ib_react"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="6dp"
+            android:background="@null"
+            android:contentDescription="@string/react"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="@+id/guideline_text_left"
+            app:layout_constraintTop_toBottomOf="@+id/ib_image"
+            app:srcCompat="@drawable/heart_off" />
+
+        <TextView
+            android:id="@+id/tv_username_below"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/username_placeholder"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline_text_left"
+            app:layout_constraintTop_toBottomOf="@+id/ib_react" />
+
+        <TextView
+            android:id="@+id/tv_caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/caption_placeholder"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_text_right"
+            app:layout_constraintStart_toEndOf="@+id/tv_username_below"
+            app:layout_constraintTop_toBottomOf="@+id/ib_react" />
+
+        <TextView
+            android:id="@+id/tv_date_posted"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/date_placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_text_right"
+            app:layout_constraintStart_toStartOf="@+id/guideline_text_left"
+            app:layout_constraintTop_toBottomOf="@+id/tv_caption" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_text_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center|start"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_user_image"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_text_right"
+            app:layout_constraintStart_toEndOf="@+id/iv_user_image"
+            app:layout_constraintTop_toTopOf="@+id/iv_user_image">
+
+            <TextView
+                android:id="@+id/tv_username_above"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username_placeholder"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location_placeholder"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
