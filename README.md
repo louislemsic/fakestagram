@@ -11,7 +11,7 @@ An android app replicating the well known app called Instagram using RecyclerVie
 You can download the APK on your android devices with this [link](https://bit.ly/Lemsicode-Fakestagram).
 
 ## Running the files in Android Studio
-1. Either download the files through ZIP or Clone this using cmd by typing `git clone git@github.com:Lemsicode/android-fakestagram.git`
+1. Either download the files through ZIP or Clone this using cmd by typing:<br />`git clone git@github.com:Lemsicode/android-fakestagram.git`
 2. Modify the file `local.properties` by adding the directory of your SDK
 3. Press the Run Button inside the app. 
 
