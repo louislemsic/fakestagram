@@ -12,8 +12,9 @@ You can download the APK on your android devices with this [link](https://bit.ly
 
 ## Running the files in Android Studio
 1. Either download the files through ZIP or Clone this using cmd by typing:<br />`git clone git@github.com:Lemsicode/android-fakestagram.git`
-2. Modify the file `local.properties` by adding the directory of your SDK
-3. Press the Run Button inside the app. 
+2. Make sure the file `local.properties` is present and automatically made by Android Studio.
+3. If `local.properties` is missing, rebuild the app inside Android Studio.
+4. Press the Run Button inside the app. 
 
 ### Reminders
 * The app requires at least version Lollipop
