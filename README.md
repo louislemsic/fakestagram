@@ -7,6 +7,11 @@ An android app replicating the well known app called Instagram using RecyclerVie
 * Each content is inside an ArrayList of a class named Post. This makes everything easy in loading them in the adapter.
 * The heart react animation when you double tap the image is also implemented in this app.
 
+## Preview
+<p align="center">
+  <img src="https://media.giphy.com/media/sM5GBcYDWhqkwv2b3L/giphy.gif" width="300px" />
+</p>
+
 ## Download the APK
 You can download the APK on your android devices with this [link](https://bit.ly/Lemsicode-Fakestagram).
 
